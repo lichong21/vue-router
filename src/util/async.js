@@ -1,5 +1,7 @@
 /* @flow */
 
+// 写个注释
+
 export function runQueue (queue: Array<?NavigationGuard>, fn: Function, cb: Function) {
   const step = index => {
     if (index >= queue.length) {
@@ -16,3 +18,4 @@ export function runQueue (queue: Array<?NavigationGuard>, fn: Function, cb: Func
   }
   step(0)
 }
+
